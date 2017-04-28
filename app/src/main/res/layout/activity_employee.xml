@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.karbaros.transvisionassignment.EmployeeActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="81dp">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="0dp"
+        android:layout_height="479dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="192dp"
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <FrameLayout
+        android:id="@+id/ibtnView"
+        android:layout_width="0dp"
+        android:layout_height="110dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/ibtnImport"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/guideline1"
+        android:layout_marginRight="8dp">
+
+        <ImageButton
+            android:id="@+id/btnview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="navigate"
+            android:scaleType="center"
+            app:srcCompat="@drawable/ic_eye"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:paddingTop="68dp"
+            android:text="View" />
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/ibtnImport"
+        android:layout_width="0dp"
+        android:layout_height="110dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/guideline1"
+        android:layout_marginRight="8dp">
+
+        <ImageButton
+            android:id="@+id/btnimport"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="navigate"
+            android:scaleType="center"
+            app:srcCompat="@drawable/ic_file_upload"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:paddingTop="75dp"
+            android:text="Import " />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/ibtnAdd"
+        android:layout_width="0dp"
+        android:layout_height="110dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/ibtnExport"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline1"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <ImageButton
+            android:id="@+id/btnadd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="navigate"
+            android:scaleType="center"
+            app:srcCompat="@drawable/ic_add"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:paddingTop="82dp"
+            android:text="Add" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/ibtnExport"
+        android:layout_width="0dp"
+        android:layout_height="110dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline1">
+
+        <ImageButton
+            android:id="@+id/btnexport"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="navigate"
+            android:scaleType="center"
+            app:srcCompat="@drawable/ic_file_download"
+            tools:layout_editor_absoluteX="10dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:paddingTop="78dp"
+            android:text="Export" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/transvison_logo" />
+
+</android.support.constraint.ConstraintLayout>
